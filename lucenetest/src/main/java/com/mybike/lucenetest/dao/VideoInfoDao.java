@@ -24,7 +24,7 @@ public class VideoInfoDao {
 
         ApplicationContext context=new ClassPathXmlApplicationContext("classpath:spring.xml");
         VideoInfoDao videoInfoDao = context.getBean("videoInfoDao", VideoInfoDao.class);
-        List<VideoInfo> list = videoInfoDao.getVideoInfoList(1, 10);
+        List<VideoInfo> list = videoInfoDao.getVideoInfoList(1, 500000);
         System.out.println(list);
     }
 
