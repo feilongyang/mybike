@@ -12,5 +12,11 @@
     <p><input type="submit" value="搜索"/></p>
 </form>
 
+
+<div>
+    <p>这里是搜索的结果页面</p>
+</div>
+
+
 </body>
 </html>

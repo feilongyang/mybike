@@ -29,7 +29,7 @@ public class HomeController {
     public String search(Map<String,Object> model){
 
         System.out.println("search................");
-        model.put("name","bbb");
+        model.put("result","aaa");
         return "search";
     }
 
