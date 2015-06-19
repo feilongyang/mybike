@@ -5,5 +5,7 @@ package com.mybike.lucenetest.analyzer;
  */
 public class SameWordFilter {
 
+    public static void main(String[] args) {
 
+    }
 }

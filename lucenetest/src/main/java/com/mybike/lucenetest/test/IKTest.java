@@ -10,6 +10,9 @@ public class IKTest {
         //IKAnalyzer analyzer = new IKAnalyzer(true);
         //TestAnalyzer testAnalyzer = new TestAnalyzer();
         TestAnalyzer analyzer = new TestAnalyzer();
+        String userName="zhangsan";
+
+
 
         AnalyzerUtils.displayTokens(analyzer,"搜狐的总裁张朝阳");
     }
