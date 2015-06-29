@@ -4,6 +4,7 @@ import com.yang.springtest.domain.User;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.stereotype.Repository;
+import org.springframework.web.context.ContextLoaderListener;
 
 import javax.annotation.Resource;
 import java.sql.ResultSet;
@@ -27,7 +28,6 @@ public class UserDao {
         String sql = "SELECT * FROM test_user WHERE username=?";
         User user = jdbcTemplate.queryForObject(sql, new RowMapper<User>() {
 
-            @Override
             public User mapRow(ResultSet rs, int rowNum) throws SQLException {
 
                 User user = new User();
