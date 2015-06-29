@@ -1,7 +1,10 @@
-package com.mybike.springtest.domain;
+package com.yang.springtest.domain;
+
+import javax.validation.constraints.Size;
 
 public class User {
 
+    @Size(min = 3,max = 7,message = "用户名的长度在3-7个字符")
     private String username;
     private String password;
 

@@ -12,7 +12,7 @@ public class TestBuildIndex {
         ApplicationContext context=new ClassPathXmlApplicationContext("classpath:spring.xml");
         IndexService indexService = context.getBean("indexService", IndexService.class);
         VideoInfoDao videoInfoDao = context.getBean("videoInfoDao", VideoInfoDao.class);
-        indexService.build(videoInfoDao.getVideoInfoList(1,10000));
+        indexService.build(videoInfoDao.getVideoInfoList(1,100000));
         System.out.println("索引构建完毕！");
     }
 }
